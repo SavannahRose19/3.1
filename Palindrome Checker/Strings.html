@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Savannah McDowell Assignment 3.1 Palindrome Checker-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Cat</title>
+    <link rel ="stylesheet" href="strings.css" type ="text/css">
+    <script src ="strings.js"></script>
+</head>
+<body>
+<!--the div tag defines this section in the html document with the id "container
+which groups the content inside the tag"-->
+    <div id = "container">
+        <!--h1 creates the header-->
+        <img id ="cat" src="instructions-tacocat.webp.png">
+        <h1>Palindrome Checker</h1>
+        <!--creates a paragraph-->
+        <p>A palindrome is a word or phrase that reads the same forwards or backwards</p>
+        <!--creates a form that can be styled in css with the id "paliForm
+        onsubmit specifies an event handler function that is called when the user clicks on the submit button
+        in the form-->
+        <form id ="paliForm" onsubmit = "return checkPalindrome()">
+            <!--creates the input field for the user to enter the text and id allows the field to be styled via css
+            the placeholder creates filler text that makes the input field more user friendly-->
+            <input type = "text" id ="userInput" placeholder ="Input text or number">
+            <br><br>
+            <!--creates a button that  that when clicked, will trigger the form to submit-->
+            <button type = "submit">Check</button>
+           </form>
+           <!--This paragraph is used to display the result of the palindrome check by using the result identifier 
+           that was created in the Javascript file-->
+        <p id ="result"></p>
+
+    </div>
+    
+</body>
+</html>
