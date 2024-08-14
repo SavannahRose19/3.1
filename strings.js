@@ -39,5 +39,9 @@ function checkPalindrome()
     {
         document.getElementById("result").innerText = '"' + input + '" is not a palindrome.';
     }
-    
+    //keeps the user on the same page upon form submission 
+    return false;
+
+
+
 }
